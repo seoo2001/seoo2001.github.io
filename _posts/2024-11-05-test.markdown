@@ -1,9 +1,0 @@
----
-layout: post
-title:  "Test."
-date:   2024-11-05 01:09:57 +0900
-categories: jekyll update
----
-
-
-This is test post.
