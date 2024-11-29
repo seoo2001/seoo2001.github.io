@@ -1,0 +1,74 @@
+---
+layout: default
+---
+<div class="footer-col-wrapper">
+    {% for category in site.data.categories %}
+    <span class="footer-col" data-category="{{ category }}" , role="button" , style="cursor: pointer;">{{
+        site.data.format[category] }}</span>
+    {% endfor %}
+</div>
+<div class="posts">
+    {% assign posts = site.posts %}
+    {% if paginator %}
+    {% assign posts = paginator.posts %}
+    {% endif %}
+    {% for post in posts %}
+    <div class="post-wrapper" {% if post.categories %} {% for category in post.categories %} data-{{ category }} {%
+        endfor %} {% endif %}>
+        <div class="post">
+            <div class="post-list-heading">
+                <a href="{{ post.url | relative_url }}">
+                    {{ post.title }}
+                </a>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+
+                <time datetime="{{ post.date | date_to_xmlschema }}" class="post-meta">{{ post.date | date_to_string
+                    }}</time>
+                <div class="post-meta">
+                    {{ post.categories }}
+                    <!-- {% if page.categories %} {% for tag in page.categories %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %} {% endif %} -->
+                </div>
+            </div>
+            <p class="post-excerpt">
+                {% if post.description %}
+                {{ post.description | strip_html }}
+                {% else %}
+                {{ post.excerpt | strip_html }}
+                {% endif %}
+            </p>
+
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+    {% else %}
+    <span>&laquo; Prev</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <em>{{ page }}</em>
+    {% elsif page == 1 %}
+    <a href="{{ '/' | relative_url }}">{{ page }}</a>
+    {% else %}
+    <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+    {% else %}
+    <span>Next &raquo;</span>
+    {% endif %}
+</div>
+{% endif %}
+
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
