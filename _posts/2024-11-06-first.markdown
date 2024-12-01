@@ -1,7 +1,10 @@
 ---
 layout: post
-title:  "글 쓰는 곳"
+title:  "첫 글"
 date:   2024-11-06 23:33:00 +0900
 categories: [daily]
 ---
-아이디어 기록하는 공간
+첫 내용
+<div style="text-align: center;">
+    <img src="/assets/images/눈.png" width="50%" title="눈" alt="눈"/> 
+</div>
