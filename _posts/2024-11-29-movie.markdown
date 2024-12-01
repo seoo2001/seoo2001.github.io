@@ -2,7 +2,7 @@
 layout: post
 title:  "LRML 구현"
 date:   2024-11-29 11:00:00 +0900
-categories: [project]
+categories: [study]
 ---
 movie project
 
