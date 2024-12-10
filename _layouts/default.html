@@ -2,6 +2,15 @@
 <html>
 
 <head>
+  <!-- mathjax -->
+  {% if page.use_math %}
+  {% include mathjax_support.html %}
+  {% endif %}
+  
+  <!-- markdown -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script> -->
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +22,7 @@
   <meta name="description" content="공간" />
   <meta property="og:description" content="공간" />
   <link rel="canonical" href="seoo2001.github.io/" />
-  <link rel="alternate" type="application/rss+xml" title="seoo2001" href="seoo2001.github.io/rss"/>
+  <link rel="alternate" type="application/rss+xml" title="seoo2001" href="seoo2001.github.io/rss" />
   <meta property="og:url" content="seoo2001.github.io/" />
   <meta property="og:site_name" content="무제" />
   <meta property="og:type" content="website" />
@@ -35,7 +44,7 @@
       </div>
     </div>
   </main>
-  
+
   {%- include footer.html -%}
 </body>
 
