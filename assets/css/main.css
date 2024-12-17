@@ -333,8 +333,8 @@
  }
  
  .footer-col-1 {
-   width: -webkit-calc(30% - (30px / 2));
-   width: calc(30% - 30px / 2);
+   width: -webkit-calc(40% - (30px / 2));
+   width: calc(40% - 30px / 2);
  }
  
  .footer-col-2 {
@@ -343,8 +343,8 @@
  }
  
  .footer-col-3 {
-   width: -webkit-calc(70% - (30px / 2));
-   width: calc(70% - 30px / 2);
+   width: -webkit-calc(60% - (30px / 2));
+   width: calc(60% - 30px / 2);
    /* 왼쪽정렬 */
    text-align: right;
  }

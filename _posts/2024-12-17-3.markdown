@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "집 가는 길"
+date:   2024-11-08 12:00:00 +0900
+categories: [daily]
+use_math: false
+---
+
+
+
+<div style="text-align: center;">
+    <img src="/assets/images/별.png" width="50%" title="진입금지" alt="진입금지"/> 
+</div>
