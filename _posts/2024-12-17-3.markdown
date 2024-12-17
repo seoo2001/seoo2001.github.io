@@ -9,5 +9,5 @@ use_math: false
 
 
 <div style="text-align: center;">
-    <img src="/assets/images/별.png" width="50%" title="진입금지" alt="진입금지"/> 
+    <img src="https://cdn.jsdelivr.net/gh/seoo2001/seoo2001.github.io@master/assets/images/별.png" title="별" alt="별"/> 
 </div>
